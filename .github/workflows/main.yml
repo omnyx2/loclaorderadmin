@@ -1,1 +1,14 @@
 
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Deployment start'
+      - run: pwd && ls
+
+
